@@ -691,14 +691,14 @@ header,
     left: 16vw;
     top: 8vw;
     width: 42vw;
-    height: 37vw;
+    height: 42vw;
   }
 
   .paper-white {
     left: 21vw;
     top: 4vw;
     width: 44vw;
-    height: 49vw;
+    height: 55vw;
   }
 
   .paper-lavender {
@@ -1090,9 +1090,9 @@ header,
   }
 
   .model {
-    transform: scale(200%);
-    bottom: 50vw;
-    left: 25vw;
+    transform: scale(280%);
+    bottom: 45vw;
+    left: 27vw;
   }
 
   .gradient-1 {
