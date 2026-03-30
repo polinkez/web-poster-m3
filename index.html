@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инструктаж новых сотрудников FRAME BUREAU</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/adaptive.css" />
+    <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@1.5.17/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
+          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <script src="./javascript/main.js" type="module"></script>
+    <link rel="icon" href="favicons/" type="image/x-icon" />
+    <link rel="icon" href="favicons/fav.svg" type="image/icon" />
+  </head>
+
+  <body>
+    <!-- LOGIN -->
+    <div class="login">
+      <div class="top">
+        <img src="./images/star.svg" alt="звездочка" />
+        <p>Внутренний портал сотрудника FRAME BUREAU</p>
+      </div>
+
+      <div class="form">
+        <div class="name">
+          <p class="label">Введите ФИО для продолжения:</p>
+
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="fullname"
+              class="fullname-input"
+              placeholder="ФИО"
+            />
+          </div>
+
+          <hr />
+        </div>
+
+        <button class="next-button" type="button">ДАЛЬШЕ &rarr;</button>
+      </div>
+    </div>
+
+    <!-- FIRST SCREEN -->
+    <header>
+      <h1>
+        бюро атмосферных <br />
+        сценариев
+      </h1>
+
+      <div class="mid-text">
+        <div class="mid-text-left">
+          <p>Прокрутите вниз,</p>
+          <p>чтобы</p>
+        </div>
+        <div class="mid-text-right">
+          <p>( ↓ )</p>
+          <p>начать инструктаж</p>
+        </div>
+      </div>
+
+      <div class="model" id="model"></div>
+
+      <div class="gradient-1"></div>
+    </header>
+
+    <!-- RUNNING LINE -->
+    <div class="running-line-1">
+      <div class="marquee">
+        <p>
+          FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU
+          ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME
+          BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * )
+          FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU
+          ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * ) FRAME
+          BUREAU ( * ) FRAME BUREAU ( * ) FRAME BUREAU ( * )
+        </p>
+      </div>
+    </div>
+
+    <!-- SECOND SCREEN -->
+    <div class="gradient-2"></div>
+
+    <div class="second-screen">
+      <div class="first-column">
+        <p>ОФИС</p>
+      </div>
+
+      <div class="second-column">
+        <div class="plan-wrap">
+          <img src="./images/plan-bg.svg" alt="план офиса" class="plan-bg" />
+
+          <!-- LAMP -->
+          <div class="lamp">
+            <img src="./images/lamp.svg" alt="лампа" class="item-base" />
+            <img src="./images/lamp-fill.svg" alt="" class="item-fill" />
+            <div class="item-tooltip">
+              <p>Лампа «Всегда Day»</p>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- FRIDGE -->
+          <div class="fridge">
+            <img
+              src="./images/fridge.svg"
+              alt="холодильник"
+              class="item-base"
+            />
+            <img src="./images/fridge-fill.svg" alt="" class="item-fill" />
+            <div class="item-tooltip">
+              <p>Мини-холодильник &laquo;ОБ&nbsp;Лиза-3&raquo;</p>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- PLANT -->
+          <div class="plant">
+            <img src="./images/plant.svg" alt="растение" class="item-base" />
+            <img src="./images/plant-fill.svg" alt="" class="item-fill" />
+            <div class="item-tooltip">
+              <p>Очиститель воздуха «Лев-2000»</p>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- SILENCER -->
+          <div class="silencer">
+            <img
+              src="./images/silencer.svg"
+              alt="поглотитель"
+              class="item-base"
+            />
+            <img src="./images/silencer-fill.svg" alt="" class="item-fill" />
+            <div class="item-tooltip">
+              <p>Поглотитель шума <br />«Саш-ш-ш»</p>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- VINYL -->
+          <div class="vinyl">
+            <img src="./images/vinyl.svg" alt="винил" class="item-base" />
+            <img src="./images/vinyl-fill.svg" alt="" class="item-fill" />
+            <div class="item-tooltip">
+              <p>Виниловый проигрыватель «Ретро-Гоша»</p>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-column">
+        <div class="text">
+          <p>Ваше рабочее место</p>
+          <h2>Кабинет&nbsp;№6-Б, этаж&nbsp;7</h2>
+          <p>
+            [ Оборудован согласно регламенту ФБ-009 &laquo;Среда первичной
+            разработки&raquo; ]
+          </p>
+        </div>
+
+        <!-- PLANT -->
+        <div class="about plant-card">
+          <div class="top">
+            <div class="close">
+              <img src="./images/close.svg" alt="закрыть" />
+            </div>
+            <div class="top-title">
+              <p>ОЧИСТИТЕЛЬ ВОЗДУХА «ЛЕВ-2000»</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="mid-text">
+              <p>
+                ПОГЛОЩАЕТ ДО&nbsp;40% ОФИСНОГО УНЫНИЯ В&nbsp;РАДИУСЕ 1,5&nbsp;М
+              </p>
+              <p>ПОЛИВАТЬ ПО&nbsp;ВТОРНИКАМ. НЕ&nbsp;РАЗГОВАРИВАТЬ.</p>
+            </div>
+
+            <div class="mid-img">
+              <img src="./images/plant.png" alt="растение" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <p>
+              <span class="bottom-grey">ШТАТНЫЙ ЗВУК:</span><br />
+              ОТСУТСТВУЕТ
+            </p>
+          </div>
+        </div>
+
+        <!-- LAMP -->
+        <div class="about lamp-card">
+          <div class="top">
+            <div class="close">
+              <img src="./images/close.svg" alt="закрыть" />
+            </div>
+            <div class="top-title">
+              <p>ЛАМПА «ВСЕГДА DAY»</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="mid-text">
+              <p>
+                СОЗДАЁТ ВПЕЧАТЛЕНИЕ, ЧТО ДЕНЬ ЕЩЁ НЕ&nbsp;ЗАКОНЧИЛСЯ
+                И&nbsp;У&nbsp;ВАС ЕСТЬ СИЛЫ.
+              </p>
+            </div>
+
+            <div class="mid-img">
+              <img src="./images/lamp.png" alt="лампа" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="block">
+              <p class="bottom-grey">ШТАТНЫЙ СВЕТ:</p>
+              <p>УБЕДИТЕЛЬНО БОДРЫЙ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VINYL -->
+        <div class="about vinyl-card">
+          <div class="top">
+            <div class="close">
+              <img src="./images/close.svg" alt="закрыть" />
+            </div>
+            <div class="top-title">
+              <p>ВИНИЛОВЫЙ ПРОИГРЫВАТЕЛЬ «РЕТРО-ГОША»</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="mid-text">
+              <p>ВОСПРОИЗВОДИТ МУЗЫКУ И&nbsp;ЛЁГКУЮ НОСТАЛЬГИЮ.</p>
+              <p>
+                МОЖЕТ НЕМНОГО ПОТРЕСКИВАТЬ. ЭТО&nbsp;НЕ&nbsp;ПОЛОМКА,
+                ЭТО&nbsp;АТМОСФЕРА!
+              </p>
+            </div>
+
+            <div class="mid-img">
+              <img src="./images/vinyl.png" alt="виниловый проигрыватель" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="block">
+              <p class="bottom-grey">ШТАТНЫЙ ЗВУК:</p>
+              <p>МЯГКОЕ ВРАЩЕНИЕ И&nbsp;ЛЁГКИЙ АНАЛОГОВЫЙ ШОРОХ</p>
+            </div>
+
+            <div class="block">
+              <p class="bottom-grey">ОПЦИИ:</p>
+
+              <div class="sound-options">
+                <label class="option">
+                  <input type="radio" name="vinyl-sound" value="jazz" checked />
+                  <span>ДЖАЗ</span>
+                  <audio id="jazzSound" src="./audio/jazz.MP3"></audio>
+                </label>
+
+                <label class="option">
+                  <input type="radio" name="vinyl-sound" value="rock" />
+                  <span>РОК</span>
+                  <audio id="rockSound" src="./audio/rock.MP3"></audio>
+                </label>
+
+                <label class="option">
+                  <input type="radio" name="vinyl-sound" value="vinyl" />
+                  <span>ШУМ ПЛАСТИНКИ</span>
+                  <audio id="vinylSound" src="./audio/vinyl.MP3"></audio>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRIDGE -->
+        <div class="about fridge-card">
+          <div class="top">
+            <div class="close">
+              <img src="./images/close.svg" alt="закрыть" />
+            </div>
+            <div class="top-title">
+              <p>МИНИ-ХОЛОДИЛЬНИК «ОБ&nbsp;ЛИЗА-3»</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="mid-text">
+              <p>ПРОИЗВОДИТЕЛЬ: НПО&nbsp;«ХЛАДТЕХ», ТРЕТЬЕ ПОКОЛЕНИЕ СЕРИИ.</p>
+              <p>
+                ОБ ЛИЗА-1 И&nbsp;ОБ&nbsp;ЛИЗА-2 СНЯТЫ С&nbsp;ПРОИЗВОДСТВА
+                ПО&nbsp;НЕВЫЯСНЕННЫМ ПРИЧИНАМ.
+              </p>
+            </div>
+
+            <div class="mid-img">
+              <img src="./images/fridge.png" alt="мини-холодильник" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="block">
+              <p class="bottom-grey">ШТАТНЫЙ ЗВУК:</p>
+              <p>НИЗКОЧАСТОТНЫЙ НЕПРЕРЫВНЫЙ ГУЛ</p>
+            </div>
+
+            <div class="block">
+              <p class="bottom-grey">ОПЦИИ:</p>
+
+              <div class="sound-options">
+                <label class="option">
+                  <input type="radio" name="fridge-sound" value="laugh" />
+                  <span>СМЕХ</span>
+                  <audio id="laughSound" src="./audio/laugh.MP3"></audio>
+                </label>
+
+                <label class="option">
+                  <input type="radio" name="fridge-sound" value="clicks" />
+                  <span>ТИХИЕ ЩЕЛЧКИ</span>
+                  <audio id="clicksSound" src="./audio/clicks.MP3"></audio>
+                </label>
+
+                <label class="option">
+                  <input
+                    type="radio"
+                    name="fridge-sound"
+                    value="canary"
+                    checked
+                  />
+                  <span>ПЕНИЕ КАНАРЕЙКИ</span>
+                  <audio id="canarySound" src="./audio/canary.MP3"></audio>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about silencer-card">
+          <div class="top">
+            <div class="close">
+              <img src="./images/close.svg" alt="закрыть" />
+            </div>
+            <div class="top-title">
+              <p>ПОГЛОТИТЕЛЬ ШУМА «САШ-Ш-Ш»</p>
+            </div>
+          </div>
+
+          <div class="middle">
+            <div class="mid-text">
+              <p>ДЕЛИКАТНО УСТРАНЯЕТ ЛИШНИЙ ШУМ И НЕРВНЫЕ ВЗДОХИ.</p>
+              <p>ПОСЛЕ НЕСКОЛЬКИХ МИНУТ РАБОТЫ ДАЖЕ ВОЗДУХ СТАНОВИТСЯ ТИШЕ.</p>
+            </div>
+
+            <div class="mid-img">
+              <img src="./images/silencer.png" alt="поглотитель звука" />
+            </div>
+          </div>
+
+          <div class="bottom">
+            <div class="block">
+              <p class="bottom-grey">ШТАТНЫЙ РЕЖИМ:</p>
+              <p>ТОТАЛЬНАЯ ТИШИНА</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THIRD SCREEN -->
+    <div class="third-screen">
+      <h2 class="spacing">ПервЫЕ ДВЕ неделИ – ознакомительнЫЕ.</h2>
+      <h2>
+        ЗА&nbsp;ЭТО&nbsp;время вы должны изучить пространство, освоить
+        инструменты БЮРО и&nbsp;выработать слух.
+      </h2>
+    </div>
+
+    <!-- FOURTH SCREEN -->
+    <div class="fourth-screen">
+      <div class="left">
+        <p>МАРТ</p>
+      </div>
+
+      <div class="center">
+        <div class="day-1">
+          <h3>2 <span>пн</span></h3>
+          <div class="todo">
+            <div class="task">
+              <div class="circle"></div>
+              <p>Вводный инструктаж</p>
+            </div>
+            <div class="task">
+              <div class="circle"></div>
+              <p>Получение оборудования 14:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="day-2">
+          <h3>3 <span>вт</span></h3>
+          <div class="task">
+            <div class="circle"></div>
+            <p>Самостоятельное изучение архива звуковых образцов</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-3">
+        <h3>4 <span>ср</span></h3>
+        <div class="todo">
+          <div class="task">
+            <div class="circle"></div>
+            <p>Прослушивание референсов по объекту «Особняк К.»</p>
+          </div>
+          <div class="task">
+            <div class="circle"></div>
+            <p>Встреча с Дмитрием Аркадьевичем в 15:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-4">
+        <h3>5 <span>чт</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Работа над объектом «Особняк К.» в команде</p>
+        </div>
+      </div>
+
+      <div class="day-5">
+        <h3>5 <span>пт</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Общий звонок команды в 10:00</p>
+        </div>
+      </div>
+
+      <div class="day-6">
+        <h3>7 <span>пн</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Самостоятельная работа над объектом «прихожая Леонида»</p>
+        </div>
+      </div>
+
+      <div class="day-7">
+        <h3>8 <span>вт</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Согласование</p>
+        </div>
+      </div>
+
+      <div class="day-8">
+        <h3>9 <span>ср</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Работа с микшером</p>
+        </div>
+      </div>
+
+      <div class="day-9">
+        <h3>10 <span>чт</span></h3>
+        <div class="todo">
+          <div class="task">
+            <div class="circle"></div>
+            <p>Совместная сессия с Колей на тему капающего крана</p>
+          </div>
+          <div class="task">
+            <div class="circle"></div>
+            <p>Презентация первого варианта по прихожей</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-10">
+        <h3>11 <span>пт</span></h3>
+        <div class="task">
+          <div class="circle"></div>
+          <p>Подведение итогов адаптационного периода</p>
+        </div>
+      </div>
+
+      <div class="sticker-1"><h2>*</h2></div>
+      <div class="sticker-2"><h3>#</h3></div>
+
+      <div class="right"></div>
+    </div>
+
+    <!-- FIFTH SCREEN -->
+    <div class="fifth-screen">
+      <div class="paper-grey">
+        <div class="text">
+          <h4>1. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h4>
+          <p>
+            &laquo;Конфиденциальная информация&raquo;&nbsp;&mdash; любая
+            информация, передаваемая одной Стороной (Раскрывающей Стороной)
+            другой Стороне (Получающей Стороне) в устной, письменной,
+            графической, электронной или иной форме.<br />
+            &laquo;Раскрывающая Сторона&raquo;&nbsp;&mdash; Сторона, передающая
+            Конфиденциальную информацию.<br />
+            &laquo;Получающая Сторона&raquo;&nbsp;&mdash; Сторона, получающая
+            доступ к&nbsp;Конфиденциальной информации.
+          </p>
+
+          <h4>2. ОБЯЗАТЕЛЬСТВА СТОРОН</h4>
+          <p>
+            2.1. Получающая Сторона обязуется сохранять конфиденциальность
+            полученной информации и&nbsp;тд.<br />
+            2.2. Раскрывающая сторона обязуется вовремя платить
+            (по&nbsp;возможности).
+          </p>
+
+          <h4>3. ДРУГОЕ</h4>
+          <p>
+            3.1. За&nbsp;разглашение Конфиденциальной информации Сотрудник несёт
+            ответственность в&nbsp;соответствии с&nbsp;Трудовым кодексом РФ,
+            Гражданским кодексом&nbsp;РФ и&nbsp;настоящим Соглашением.<br />
+            3.2. Помимо юридической ответственности, Сотрудник понимает:
+            разглашение наших звуковых ландшафтов причиняет компании душевную
+            боль. Мы&nbsp;это переживём, но&nbsp;осадочек останется.<br />
+            3.3. FRAME BUREAU оставляет за&nbsp;собой право взыскать
+            с&nbsp;Сотрудника убытки, включая упущенную выгоду.<br />
+            3.4. Компания также оставляет за&nbsp;собой право расстроиться.
+            Имейте совесть.
+          </p>
+        </div>
+      </div>
+
+      <div class="paper-white">
+        <div class="text">
+          <div class="heading">
+            <h3>СОГЛАШЕНИЕ<br />О НЕРАЗГЛАШЕНИИ</h3>
+            <p>*</p>
+          </div>
+          <div class="paper-white-subtitle">
+            <p>Документ № ФБ-НДА-2024 / Форма обязательная</p>
+          </div>
+          <div class="paper-white-text">
+            <p>
+              Настоящее соглашение заключается между Frame Bureau (далее —
+              «Студия») и <span class="employee-name-inline">[ФИО]</span> (далее
+              — «Сотрудник»).
+            </p>
+
+            <p>
+              Сотрудник обязуется не&nbsp;разглашать, не&nbsp;воспроизводить
+              и&nbsp;не &nbsp;имитировать любые звуковые решения, разработанные
+              в&nbsp;рамках проектов Студии, включая,
+              но&nbsp;не&nbsp;ограничиваясь: авторские скрипы, патентованные
+              гулы, сертифицированные шорохи и&nbsp;эксклюзивные мяуканья
+              архитектурных поверхностей.
+            </p>
+
+            <p>
+              Сотрудник осознаёт, что&nbsp;звук является нематериальным,
+              но&nbsp;юридически защищённым активом.
+            </p>
+
+            <p>
+              Срок действия: бессрочно.<br />
+              Территория действия: везде, где&nbsp;есть звук.
+            </p>
+
+            <p class="mini">
+              ООО «ФРЕЙМ БЮРО»<br />
+              ИНН: 9704152630<br />
+              КПП: 770401001<br />
+              ОГРН: 1247700001258<br />
+              Адрес: 119021, Москва,<br />
+              ул. Тимура Фрунзе, д. 11
+            </p>
+
+            <div class="signatures">
+              <div class="seo">
+                <p>Генеральный директор</p>
+                <div class="line"></div>
+                <div class="director-sign">
+                  <img src="./images/signature.svg" alt="подпись директора" />
+                </div>
+                <p>Бежан П.А</p>
+              </div>
+
+              <div class="employee">
+                <p>Сотрудник</p>
+                <div class="line"></div>
+                <div class="signature">
+                  <canvas class="signature-canvas"></canvas>
+                </div>
+                <p class="employee-name-bottom">[ФИО]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper-lavender">
+        <div class="holes">
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+          <div class="hole"></div>
+        </div>
+
+        <h3>ЭКСПЛУАТАЦИЯ ЗВУКА.<br />ПАМЯТКА</h3>
+
+        <p>
+          Пространство любит заботу. Пожалуйста, воздержитесь от&nbsp;следующих
+          действий:
+        </p>
+
+        <ul>
+          <li>сверлить стены в&nbsp;зонах акустических резонаторов;</li>
+          <li>кричать в&nbsp;угол с&nbsp;реверберацией;</li>
+          <li>переставлять динамики без&nbsp;согласования;</li>
+          <li>менять частоты вручную;</li>
+          <li>
+            использовать пространство как&nbsp;караоке-зал без&nbsp;письменного
+            разрешения;
+          </li>
+          <li>пытаться записать наши звуки на&nbsp;диктофон.</li>
+        </ul>
+
+        <p>
+          На&nbsp;звуковые сценарии распространяется гарантия 3&nbsp;года
+          при&nbsp;условии бережной эксплуатации.
+        </p>
+
+        <p>
+          Недовольных клиентов направлять сюда:<br />
+          +7 (495) 800-43-21<br />
+          hello@frame.bu
+        </p>
+      </div>
+
+      <div class="business-card">
+        <div class="bc-grid">
+          <h3 class="bold delay-1">A</h3>
+          <h3 class="bold delay-2">M</h3>
+          <h3 class="bold delay-3">E</h3>
+          <h3 class="bold delay-4">&gt;</h3>
+          <h3 class="bold delay-5">!</h3>
+          <h3 class="bold delay-6">#</h3>
+          <h3 class="bold delay-7">/*</h3>
+
+          <h3 class="bold delay-8">R</h3>
+          <h3 class="bold delay-9">/*</h3>
+          <h3 class="bold delay-10">#</h3>
+          <h3 class="bold delay-11">;</h3>
+          <h3 class="bold delay-12">&lt;</h3>
+          <h3 class="bold delay-13">&amp;</h3>
+          <h3 class="bold delay-14">U</h3>
+
+          <h3 class="bold delay-15">F</h3>
+          <h3 class="bold delay-16">_</h3>
+          <h3 class="bold delay-17">&amp;</h3>
+          <h3 class="bold delay-18">)</h3>
+          <h3 class="bold delay-19">=</h3>
+          <h3 class="bold delay-20">?</h3>
+          <h3 class="bold delay-21">A</h3>
+
+          <h3 class="bold delay-22">3</h3>
+          <h3 class="bold delay-23">#</h3>
+          <h3 class="bold delay-24">_</h3>
+          <h3 class="bold delay-25">B</h3>
+          <h3 class="bold delay-26">U</h3>
+          <h3 class="bold delay-27">R</h3>
+          <h3 class="bold delay-28">E</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUNNING LINE -->
+    <div class="running-line-2">
+      <div class="marquee">
+        <p>
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+          ПОЗДРАВЛЯЕМ ( ! ) ВЫ ПРИНЯТЫ ( & ) в пн ждем вас в офисе ( * )
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="gradient-3"></div>
+
+      <img src="/images/sound.svg" alt="" />
+
+      <div class="credits">
+        <div class="left">
+          <p>камила рихтер</p>
+          <p>анна комкова</p>
+        </div>
+
+        <div class="right">
+          <p>( б25дз10 )</p>
+          <p>бежан полина</p>
+        </div>
+      </div>
+
+      <p>FRAME BUREAU</p>
+    </div>
+
+    <!-- EMAILS -->
+    <div class="email-popup">
+      <div class="top">
+        <div class="close">×</div>
+        <div class="top-title">
+          <p>НОВОЕ СООБЩЕНИЕ</p>
+        </div>
+      </div>
+
+      <div class="from-row">
+        <p class="from-label">ОТ:</p>
+        <p class="email-from-text"></p>
+      </div>
+
+      <div class="email-body">
+        <p class="email-text"></p>
+      </div>
+    </div>
+  </body>
+</html>

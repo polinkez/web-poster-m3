@@ -1,0 +1,1428 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+}
+
+img,
+canvas {
+  max-width: 100%;
+}
+
+header,
+.second-screen,
+.third-screen,
+.fourth-screen,
+.fifth-screen,
+.footer,
+.running-line-1,
+.running-line-2 {
+  width: 100%;
+}
+
+/*  1680x1050  */
+@media (min-width: 1601px) {
+  header h1 {
+    font-size: 7.7vw;
+    margin-top: 1.2vw;
+  }
+
+  header .mid-text {
+    margin-top: 8.2vw;
+    padding: 2.4vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 24%;
+  }
+
+  header .mid-text p {
+    font-size: 1.15vw;
+  }
+
+  .model {
+    width: 39vw;
+    height: 53vw;
+    bottom: -8vw;
+  }
+
+  .gradient-1 {
+    height: 26vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 0.82vw;
+  }
+
+  .second-screen {
+    padding: 3vw 2.2vw;
+    gap: 1.5vw;
+  }
+
+  .first-column {
+    width: 4%;
+  }
+
+  .second-column {
+    width: 56%;
+  }
+
+  .third-column {
+    width: 34%;
+    margin-left: 1.6vw;
+  }
+
+  .second-screen .about {
+    width: 24vw;
+  }
+
+  .third-screen {
+    padding: 0.8vw 1vw 1.4vw;
+    height: auto;
+    min-height: 12vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 24vw;
+  }
+
+  .fourth-screen {
+    height: 66vh;
+    min-height: 42vw;
+  }
+
+  .fourth-screen .day-1,
+  .fourth-screen .day-2,
+  .fourth-screen .day-3,
+  .fourth-screen .day-4,
+  .fourth-screen .day-5,
+  .fourth-screen .day-6,
+  .fourth-screen .day-7,
+  .fourth-screen .day-8,
+  .fourth-screen .day-9,
+  .fourth-screen .day-10 {
+    min-height: 16vw;
+  }
+
+  .fourth-screen .task p {
+    width: 12vw;
+  }
+
+  .fifth-screen {
+    min-height: 78vw;
+  }
+
+  .paper-grey {
+    left: 20vw;
+    top: 5.5vw;
+    width: 38vw;
+    height: 34vw;
+  }
+
+  .paper-white {
+    left: 24.3vw;
+    top: 2.5vw;
+    width: 39vw;
+    height: 43vw;
+  }
+
+  .paper-lavender {
+    right: 22vw;
+    top: 14vw;
+    width: 38vw;
+    height: 29vw;
+  }
+
+  .business-card {
+    left: 14vw;
+    top: 23vw;
+    width: 20vw;
+    height: 12.8vw;
+  }
+
+  .footer {
+    height: 27vw;
+  }
+
+  .footer p {
+    font-size: 11vw;
+    margin-top: 1vw;
+  }
+}
+
+/*  1440x900  */
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  header h1 {
+    font-size: 7.95vw;
+    margin-top: 1.4vw;
+  }
+
+  header .mid-text {
+    margin-top: 9vw;
+    padding: 2.4vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 26%;
+  }
+
+  header .mid-text p {
+    font-size: 1.18vw;
+  }
+
+  .model {
+    transform: scale(120%);
+    bottom: -5vw;
+    left: 30vw;
+  }
+
+  .gradient-1 {
+    height: 28vw;
+  }
+
+  .second-screen {
+    padding: 3.2vw 2.2vw;
+    gap: 1.7vw;
+  }
+
+  .first-column {
+    width: 4%;
+  }
+
+  .second-column {
+    width: 57%;
+  }
+
+  .third-column {
+    width: 35%;
+    margin-left: 1vw;
+  }
+
+  .second-screen .about {
+    width: 25.5vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 12vw;
+    padding: 0.9vw 1vw 1.6vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 21vw;
+  }
+
+  .fourth-screen {
+    height: 68vh;
+    min-height: 43vw;
+  }
+
+  .fourth-screen .task p {
+    width: 12.5vw;
+  }
+
+  .fifth-screen {
+    margin-top: 5vw;
+  }
+
+  .paper-grey {
+    left: 19vw;
+    top: 5.8vw;
+  }
+
+  .paper-white {
+    left: 23vw;
+    top: 2.8vw;
+  }
+
+  .paper-lavender {
+    right: 22vw;
+    top: 15vw;
+  }
+
+  .business-card {
+    left: 13vw;
+    top: 24vw;
+  }
+
+  .footer {
+    height: 29vw;
+  }
+}
+
+/*  1366x768  */
+@media (min-width: 1281px) and (max-width: 1400px) {
+  header {
+    height: 60vw;
+  }
+  header h1 {
+    font-size: 8.2vw;
+    line-height: 0.96;
+    margin-top: 1.8vw;
+  }
+
+  header .mid-text {
+    margin-top: 8.8vw;
+    padding: 2.2vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 27%;
+  }
+
+  header .mid-text p {
+    font-size: 1.15vw;
+  }
+
+  .model {
+    transform: scale(120%);
+    bottom: -5vw;
+    left: 30vw;
+  }
+
+  .gradient-1 {
+    height: 29vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 0.84vw;
+  }
+
+  .second-screen {
+    padding: 3vw 2vw;
+    gap: 1.6vw;
+  }
+
+  .first-column {
+    width: 4%;
+  }
+
+  .second-column {
+    width: 58%;
+  }
+
+  .third-column {
+    width: 34%;
+    margin-left: 0;
+  }
+
+  .text p,
+  .first-column p,
+  .fourth-screen .task p,
+  .paper-lavender p,
+  .paper-lavender li,
+  .paper-white-text p,
+  .paper-grey p {
+    font-size: 0.95vw;
+  }
+
+  .second-screen .about {
+    width: 27vw;
+    font-size: 0.9vw;
+  }
+
+  .item-tooltip {
+    width: 13.5vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 11vw;
+    padding: 1vw 1vw 1.8vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 20vw;
+  }
+
+  .fourth-screen {
+    height: 70vh;
+    min-height: 41vw;
+  }
+
+  .fourth-screen .task p {
+    width: 12vw;
+  }
+
+  .fifth-screen {
+    height: 50vw;
+  }
+
+  .paper-grey {
+    left: 18vw;
+    top: 6.5vw;
+    width: 40vw;
+    height: 35vw;
+  }
+
+  .paper-white {
+    left: 23vw;
+    top: 3vw;
+    width: 41vw;
+    height: 45vw;
+  }
+
+  .paper-lavender {
+    right: 20vw;
+    top: 16vw;
+    width: 40vw;
+    height: 30vw;
+  }
+
+  .business-card {
+    left: 12vw;
+    top: 25vw;
+    width: 21vw;
+    height: 13.5vw;
+  }
+
+  .footer {
+    height: 30vw;
+  }
+}
+
+/*  1280x800  */
+@media (min-width: 1101px) and (max-width: 1280px) {
+  header {
+    height: 55vw;
+  }
+  header h1 {
+    font-size: 8vw;
+    line-height: 0.96;
+    margin-top: 2vw;
+    white-space: normal;
+  }
+
+  header .mid-text {
+    margin-top: 9.5vw;
+    padding: 2.4vw 2vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 29%;
+  }
+
+  header .mid-text p {
+    font-size: 1.22vw;
+  }
+
+  .model {
+    transform: scale(100%);
+    bottom: -8vw;
+    left: 26vw;
+  }
+
+  .gradient-1 {
+    height: 30vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 0.9vw;
+  }
+
+  .second-screen {
+    padding: 3vw 1.8vw;
+    gap: 1.2vw;
+  }
+
+  .first-column {
+    width: 4.5%;
+  }
+
+  .second-column {
+    width: 58%;
+  }
+
+  .third-column {
+    width: 34%;
+    margin-left: 0;
+  }
+
+  .text p,
+  .first-column p,
+  .paper-lavender p,
+  .paper-lavender li,
+  .paper-white-text p,
+  .fourth-screen .task p {
+    font-size: 1vw;
+  }
+
+  .item-tooltip {
+    width: 15vw;
+    left: 104%;
+  }
+
+  .second-screen .about {
+    width: 28vw;
+    font-size: 0.95vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 12vw;
+    padding: 1vw 1vw 2vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 16vw;
+  }
+
+  .fourth-screen {
+    height: 40vw;
+    grid-template-columns: 7vw repeat(5, 1fr) 6vw;
+  }
+
+  .fourth-screen h3,
+  .fourth-screen h3 span {
+    font-size: 2.2vw;
+  }
+
+  .fourth-screen .task p {
+    width: 11.5vw;
+    font-size: 0.94vw;
+  }
+
+  .fifth-screen {
+    height: 55vw;
+  }
+
+  .paper-grey {
+    left: 17vw;
+    top: 7vw;
+    width: 41vw;
+    height: 36vw;
+  }
+
+  .paper-white {
+    left: 22vw;
+    top: 3vw;
+    width: 42vw;
+    height: 47vw;
+  }
+
+  .paper-lavender {
+    right: 18vw;
+    top: 17vw;
+    width: 41vw;
+    height: 31vw;
+  }
+
+  .business-card {
+    left: 11vw;
+    top: 27vw;
+    width: 22vw;
+    height: 14vw;
+  }
+
+  .footer {
+    height: 36vw;
+  }
+
+  .footer p {
+    font-size: 11.8vw;
+    margin: 1vw 2vw 0 2vw;
+  }
+}
+
+/*  1024x768 */
+@media (min-width: 821px) and (max-width: 1100px) {
+  .login .top {
+    top: 1.6vw;
+    padding: 0 1.8vw;
+  }
+
+  .login p {
+    font-size: 1vw;
+  }
+
+  .login .name p,
+  .login .fullname-input {
+    font-size: 2vw;
+  }
+
+  .login .next-button {
+    font-size: 1.25vw;
+  }
+
+  header {
+    height: 60vw;
+  }
+
+  header h1 {
+    font-size: 8vw;
+    line-height: 0.96;
+    white-space: normal;
+    margin-top: 2.2vw;
+  }
+
+  header .mid-text {
+    margin-top: 11vw;
+    padding: 2.6vw 2vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 30%;
+  }
+
+  header .mid-text p {
+    font-size: 1.25vw;
+  }
+
+  .model {
+    transform: scale(115%);
+    left: 27vw;
+    bottom: -3vw;
+  }
+
+  .gradient-1 {
+    height: 33vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 1vw;
+  }
+
+  .second-screen {
+    padding: 3.5vw 2vw;
+    gap: 1.6vw;
+    align-items: flex-start;
+  }
+
+  .first-column {
+    width: 5%;
+  }
+
+  .first-column p,
+  .text p {
+    font-size: 1.1vw;
+  }
+
+  .second-column {
+    width: 57%;
+  }
+
+  .third-column {
+    width: 36%;
+    margin-left: 0;
+  }
+
+  .item-tooltip {
+    width: 16vw;
+  }
+
+  .item-tooltip p,
+  .item-tooltip span {
+    font-size: 0.95vw;
+  }
+
+  .second-screen .about {
+    width: 29vw;
+    font-size: 0.95vw;
+  }
+
+  .second-screen .about .top-title p {
+    font-size: 0.82vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 13vw;
+    padding: 1.4vw 1vw 2.2vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 12vw;
+  }
+
+  .third-screen h2 {
+    font-size: 2.9vw;
+  }
+
+  .fourth-screen {
+    height: 40vw;
+    grid-template-columns: 6vw repeat(5, 1fr) 5vw;
+  }
+
+  .fourth-screen h3,
+  .fourth-screen h3 span {
+    font-size: 2.35vw;
+    margin-bottom: 1vw;
+  }
+
+  .fourth-screen .task p {
+    width: 11vw;
+    font-size: 0.95vw;
+  }
+
+  .circle {
+    width: 0.85vw;
+    height: 0.85vw;
+  }
+
+  .fourth-screen .sticker-1,
+  .fourth-screen .sticker-2 {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .fifth-screen {
+    height: 57vw;
+  }
+
+  .paper-grey {
+    left: 16vw;
+    top: 8vw;
+    width: 42vw;
+    height: 37vw;
+  }
+
+  .paper-white {
+    left: 21vw;
+    top: 4vw;
+    width: 44vw;
+    height: 49vw;
+  }
+
+  .paper-lavender {
+    right: 15vw;
+    top: 19vw;
+    width: 42vw;
+    height: 32vw;
+  }
+
+  .business-card {
+    left: 10vw;
+    top: 30vw;
+    width: 24vw;
+    height: 15vw;
+  }
+
+  .footer {
+    height: 34vw;
+  }
+
+  .footer .credits p {
+    font-size: 1.3vw;
+    margin: 0 3vw 0 3vw;
+  }
+
+  .footer p {
+    font-size: 11.6vw;
+  }
+
+  .email-popup {
+    width: 34vw;
+  }
+}
+
+/* 768x1024 */
+@media (min-width: 476px) and (max-width: 820px) {
+  .login .top {
+    top: 2.8vw;
+    padding: 0 3vw;
+  }
+
+  .login p {
+    font-size: 1.7vw;
+  }
+
+  .login .name p,
+  .login .fullname-input {
+    font-size: 3.1vw;
+  }
+
+  .login .next-button {
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+
+  header {
+    height: 140vw;
+  }
+
+  header h1 {
+    font-size: 11vw;
+    line-height: 0.96;
+    white-space: normal;
+    margin-top: 4vw;
+    text-align: left;
+  }
+
+  header .mid-text {
+    margin-top: 5vw;
+    padding: 3.2vw 2.5vw;
+  }
+
+  header .mid-text-left,
+  header .mid-text-right {
+    width: 31%;
+  }
+
+  header .mid-text p {
+    font-size: 1.6vw;
+  }
+
+  .model {
+    transform: scale(220%);
+    left: 25vw;
+    bottom: 30vw;
+  }
+
+  .gradient-1 {
+    height: 38vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 1.4vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+
+  .second-screen {
+    padding: 4.2vw 2.8vw;
+    gap: 1.8vw;
+    flex-direction:;
+  }
+
+  .first-column {
+    width: 6%;
+  }
+
+  .first-column p,
+  .text p {
+    font-size: 2vw;
+  }
+
+  .second-column {
+    width: 58%;
+  }
+
+  .third-column {
+    width: 36%;
+    margin-left: 0;
+  }
+
+  .item-tooltip {
+    display: none;
+  }
+
+  .second-screen .about {
+    width: 30vw;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+  }
+
+  .second-screen .about .top {
+    height: 4.2vw;
+  }
+
+  .second-screen .about .close {
+    width: 4.2vw;
+  }
+
+  .second-screen .about .close img {
+    width: 1.2vw;
+  }
+
+  .second-screen .about .top-title p {
+    font-size: 1.05vw;
+  }
+
+  .second-screen .about .mid-img img {
+    max-width: 9.5vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 15vw;
+    padding: 1.8vw 1.4vw 3vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 0;
+  }
+
+  .third-screen h2 {
+    font-size: 3.6vw;
+  }
+
+  .fourth-screen {
+    height: 50vw;
+    grid-template-columns: 5.5vw repeat(5, 1fr) 4vw;
+  }
+
+  .fourth-screen h3,
+  .fourth-screen h3 span {
+    font-size: 2.7vw;
+    line-height: 3vw;
+    margin-bottom: 1.2vw;
+  }
+
+  .fourth-screen .task {
+    gap: 0.8vw;
+  }
+
+  .fourth-screen .task p {
+    width: 11.4vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .circle {
+    width: 1vw;
+    height: 1vw;
+    min-width: 1vw;
+  }
+
+  .fourth-screen .sticker-1,
+  .fourth-screen .sticker-2 {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .fifth-screen {
+    height: 100vw;
+  }
+
+  .paper-grey {
+    left: 13vw;
+    top: 12vw;
+    width: 48vw;
+    height: 80vw;
+    padding: 2vw;
+  }
+  .paper-grey h4 {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 1vw;
+  }
+  .paper-grey p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .paper-white {
+    left: 20vw;
+    top: 7vw;
+    width: 50vw;
+    height: 75vw;
+    padding: 3vw;
+  }
+
+  .paper-white h3 {
+    margin-top: 2vw;
+  }
+
+  .paper-white p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .paper-lavender {
+    right: 11vw;
+    top: 27vw;
+    width: 49vw;
+    height: 45vw;
+    padding: 3vw 5vw 2.5vw 3vw;
+  }
+
+  .paper-lavender p,
+  .paper-lavender li {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+
+  .business-card {
+    left: 8vw;
+    top: 41vw;
+    width: 27vw;
+    height: 17.5vw;
+  }
+
+  .footer {
+    height: 42vw;
+  }
+
+  .footer .credits {
+    padding: 2vw;
+    margin-top: 5vw;
+  }
+
+  .footer .credits p {
+    font-size: 1.6vw;
+  }
+
+  .footer p {
+    font-size: 11.8vw;
+  }
+
+  .email-popup {
+    width: 42vw;
+  }
+
+  .email-popup .top-title p {
+    font-size: 1.6vw;
+  }
+
+  .email-popup .from-row p {
+    font-size: 1.6vw;
+  }
+  .email-popup .email-text {
+    font-size: 1.6vw;
+  }
+}
+
+/*  320–475 */
+@media (max-width: 475px) {
+  .login .top {
+    top: 4vw;
+    padding: 0 4vw;
+  }
+
+  .login p {
+    font-size: 2.3vw;
+  }
+
+  .login .form {
+    width: 72vw;
+  }
+
+  .login .name p,
+  .login .fullname-input {
+    font-size: 4.2vw;
+  }
+
+  .login .next-button {
+    font-size: 3vw;
+    margin-top: 3vw;
+  }
+
+  header {
+    height: 180vw;
+  }
+
+  header h1 {
+    font-size: 11.8vw;
+    line-height: 0.97;
+    white-space: normal;
+    margin-top: 6vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: left;
+  }
+
+  header .mid-text {
+    margin-top: 6vw;
+    margin-left: 3vw;
+    flex-direction: column;
+  }
+
+  header .mid-text p {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+
+  .model {
+    transform: scale(200%);
+    bottom: 70vw;
+    left: 23vw;
+  }
+
+  .gradient-1 {
+    height: 52vw;
+  }
+
+  .running-line-1 .marquee p,
+  .running-line-2 .marquee p {
+    font-size: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding-right: 5vw;
+  }
+
+  .gradient-2 {
+    height: 5vw;
+  }
+
+  .second-screen {
+    padding: 5.5vw 3vw;
+    gap: 2vw;
+    flex-direction: column;
+  }
+
+  .first-column {
+    width: 100%;
+    gap: 2vw;
+  }
+
+  .first-column p,
+  .text p {
+    font-size: 3vw;
+  }
+
+  .second-column {
+    width: 100%;
+  }
+
+  .third-column {
+    width: 100%;
+    gap: 2vw;
+  }
+
+  .third-column .text h2 {
+    font-size: 4vw;
+  }
+
+  .item-tooltip {
+    display: none;
+  }
+
+  .lamp {
+    width: 6.3vw;
+  }
+
+  .fridge {
+    width: 11.5vw;
+  }
+
+  .plant {
+    width: 4.1vw;
+  }
+
+  .silencer {
+    width: 6.4vw;
+  }
+
+  .vinyl {
+    width: 8.7vw;
+  }
+
+  .second-screen .about {
+    width: 34vw;
+    margin-top: 1vw;
+    font-size: 1.45vw;
+  }
+
+  .second-screen .about .top {
+    height: 5vw;
+  }
+
+  .second-screen .about .close {
+    width: 5vw;
+  }
+
+  .second-screen .about .close img {
+    width: 1.5vw;
+  }
+
+  .second-screen .about .top-title p {
+    font-size: 1.3vw;
+  }
+
+  .second-screen .about .mid-text,
+  .second-screen .about .mid-img,
+  .second-screen .about .bottom {
+    padding: 1.2vw;
+  }
+
+  .second-screen .about .mid-text {
+    gap: 0.8vw;
+  }
+
+  .second-screen .about .mid-img img {
+    max-width: 10.5vw;
+  }
+
+  .third-screen {
+    height: auto;
+    min-height: 21vw;
+    padding: 2.4vw 2vw 4vw;
+  }
+
+  .third-screen .spacing {
+    margin-left: 0;
+  }
+
+  .third-screen h2 {
+    font-size: 4.9vw;
+    line-height: 0.98;
+  }
+
+  .fourth-screen {
+    height: 92vw;
+    min-height: 92vw;
+    grid-template-columns: 5vw repeat(5, 1fr) 0;
+  }
+
+  .fourth-screen .left {
+    margin-left: 0;
+  }
+
+  .fourth-screen .right {
+    display: none;
+  }
+
+  .fourth-screen h3,
+  .fourth-screen h3 span {
+    font-size: 3.4vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .fourth-screen .task {
+    gap: 1vw;
+  }
+
+  .fourth-screen .task p {
+    width: 12vw;
+    font-size: 1.45vw;
+    line-height: 1.15;
+  }
+
+  .circle {
+    width: 1.3vw;
+    height: 1.3vw;
+    min-width: 1.3vw;
+  }
+
+  .fourth-screen .sticker-1,
+  .fourth-screen .sticker-2 {
+    width: 9.5vw;
+    height: 9.5vw;
+  }
+
+  .fourth-screen .sticker-1 {
+    top: 38vw;
+    left: 11vw;
+  }
+
+  .fourth-screen .sticker-1 h2 {
+    margin-top: 5vw;
+    font-size: 6.2vw;
+  }
+
+  .fourth-screen .sticker-2 {
+    left: 49vw;
+    bottom: 8vw;
+  }
+
+  .fourth-screen .sticker-2 h3 {
+    margin-top: 2.7vw;
+    font-size: 4.5vw;
+  }
+
+  .fifth-screen {
+    height: 132vw;
+  }
+
+  .paper-grey {
+    left: 7vw;
+    top: 21vw;
+    width: 56vw;
+    height: 85vw;
+    padding: 2.8vw;
+  }
+
+  .paper-grey .text {
+    margin: 0 2.5vw;
+  }
+
+  .paper-grey h4 {
+    font-size: 2.5vw;
+  }
+
+  .paper-grey p {
+    font-size: 1.8vw;
+    line-height: 1.25;
+  }
+
+  .paper-white {
+    left: 17vw;
+    top: 14vw;
+    width: 58vw;
+    height: 94vw;
+    padding: 4vw;
+  }
+
+  .paper-white .text {
+    margin: 0 1.8vw;
+  }
+
+  .paper-white .heading h3 {
+    font-size: 3.9vw;
+  }
+
+  .paper-white .heading p {
+    font-size: 5vw;
+  }
+
+  .paper-white .text .paper-white-subtitle p,
+  .paper-white-text .mini,
+  .seo p,
+  .employee p {
+    font-size: 1.45vw;
+    line-height: 1.25;
+  }
+
+  .paper-white-text p {
+    font-size: 1.8vw;
+    line-height: 1.28;
+  }
+
+  .signatures {
+    gap: 4vw;
+    margin-top: 3vw;
+  }
+
+  .seo,
+  .employee {
+    width: 18vw;
+  }
+
+  .line {
+    margin: 3vw 0 0.5vw;
+  }
+
+  .director-sign {
+    width: 10vw;
+    height: 3vw;
+    margin-top: -2.8vw;
+  }
+
+  .signature {
+    height: 4.4vw;
+    margin-top: -3.2vw;
+  }
+
+  .paper-lavender {
+    right: 4vw;
+    top: 45vw;
+    width: 56vw;
+    height: 73vw;
+    padding: 4vw 6.5vw 3vw 3.5vw;
+  }
+
+  .paper-lavender h3 {
+    font-size: 3.8vw;
+    margin-bottom: 2vw;
+  }
+
+  .paper-lavender p,
+  .paper-lavender li {
+    font-size: 2.1vw;
+    line-height: 2.5vw;
+  }
+
+  .paper-lavender ul {
+    margin-left: 3.4vw;
+  }
+
+  .holes {
+    top: 2.4vw;
+    right: 2.2vw;
+    gap: 2vw;
+  }
+
+  .hole {
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+
+  .business-card {
+    left: 5vw;
+    top: 71vw;
+    width: 31vw;
+    height: 20vw;
+    padding: 2vw;
+  }
+
+  .business-card .bc-grid {
+    margin-left: 0.4vw;
+  }
+
+  .business-card .bc-grid .bold {
+    font-size: 1.7vw;
+  }
+
+  .footer {
+    height: 52vw;
+  }
+
+  .gradient-3 {
+    height: 15vw;
+  }
+
+  .footer img {
+    padding: 2vw;
+  }
+
+  .footer .credits {
+    padding: 2.2vw;
+    margin-top: 5vw;
+  }
+
+  .footer .credits .left,
+  .footer .credits .right {
+    width: 34%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3.4vw;
+  }
+
+  .footer .credits p {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+  }
+
+  .footer p {
+    font-size: 10.8vw;
+    margin-top: 3vw;
+  }
+
+  .email-popup {
+    width: 32vw;
+    height: 28vw;
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 4vw;
+    transform: translateX(-50%);
+  }
+  .email-popup .top-title p {
+    font-size: 1.8vw;
+    line-height: 2vw;
+  }
+
+  .email-popup .from-row p {
+    font-size: 1.8vw;
+    line-height: 2vw;
+  }
+  .email-popup .email-text {
+    font-size: 1.8vw;
+    line-height: 2vw;
+  }
+}
+
+@media (hover: none) {
+  .lamp:hover .item-fill,
+  .fridge:hover .item-fill,
+  .plant:hover .item-fill,
+  .silencer:hover .item-fill,
+  .vinyl:hover .item-fill {
+    opacity: 0;
+  }
+}
