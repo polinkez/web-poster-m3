@@ -69,23 +69,6 @@ function fillEmployeeName(name) {
   if (bottomName) bottomName.textContent = safeName
 }
 
-function initCursorCoords() {
-  const header = document.querySelector('header')
-  const coordX = document.querySelector('.coord-x')
-  const coordY = document.querySelector('.coord-y')
-
-  if (!header || !coordX || !coordY) return
-
-  header.addEventListener('mousemove', function (event) {
-    const rect = header.getBoundingClientRect()
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
-
-    coordX.textContent = String(Math.round(x))
-    coordY.textContent = String(Math.round(y))
-  })
-}
-
 /* FIRST SCREEN */
 
 function initThree() {
@@ -201,8 +184,8 @@ function initThree() {
     requestAnimationFrame(animate)
 
     if (model) {
-      model.rotation.y += (targetRotationY - model.rotation.y) * 0.06
-      model.rotation.x += (targetRotationX - model.rotation.x) * 0.06
+      model.rotation.y += (targetRotationY - model.rotation.y) * 0.04
+      model.rotation.x += (targetRotationX - model.rotation.x) * 0.04
     }
 
     renderer.render(scene, camera)

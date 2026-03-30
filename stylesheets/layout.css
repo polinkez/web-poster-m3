@@ -176,12 +176,8 @@ header .toggle {
 .model {
   position: absolute;
   left: 50%;
-  bottom: -10vw;
+  bottom: 0;
   transform: translateX(-50%);
-  width: 44vw;
-  height: 58vw;
-  z-index: 10;
-  pointer-events: none;
 }
 
 .model canvas {
@@ -838,7 +834,7 @@ header .toggle {
   left: 26vw;
   top: 2.8vw;
   width: 42vw;
-  height: 46vw;
+  height: 48vw;
   background: var(--white);
   padding: 2.6vw 3.2vw 2.6vw 3.2vw;
   z-index: 5;
@@ -1233,6 +1229,56 @@ header .toggle {
   color: var(--white);
   text-align: center;
   white-space: nowrap;
+}
+.footer p {
+  font-size: 12vw;
+  margin-top: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-family: 'Neutral Face', sans-serif;
+  color: var(--white);
+  text-align: center;
+  white-space: nowrap;
+
+  transition: 0.3s;
+}
+
+.footer p:hover {
+  animation: footerBlink 2.8s ease-in-out infinite;
+}
+
+@keyframes footerBlink {
+  0% {
+    opacity: 1;
+    text-shadow: none;
+  }
+
+  15% {
+    opacity: 0.6;
+    text-shadow: 0 0 0.3vw rgba(255, 255, 255, 0.3);
+  }
+
+  30% {
+    opacity: 0.9;
+  }
+
+  45% {
+    opacity: 0.4;
+    text-shadow: 0 0 0.6vw rgba(255, 255, 255, 0.5);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: none;
+  }
 }
 
 /* EMAILS */
